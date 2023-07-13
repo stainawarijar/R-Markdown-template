@@ -1,0 +1,24 @@
+---
+title: "Title"
+author: "Name"
+output: 
+  pdf_document:
+    highlight: breezedark
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+```
+
+```{r}
+# Imports
+library(tidyverse)
+library(readxl)
+library(writexl)
+library(ggpubr)
+library(rstatix)
+```
+
