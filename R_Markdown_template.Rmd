@@ -16,6 +16,7 @@ def_hook <- knitr::knit_hooks$get("output")
 knitr::knit_hooks$set(output = function(x, options) {
   out <- def_hook(x, options)
   return(paste("\\begin{framed}\\begin{verbatim}", x, "\\end{verbatim}\\end{framed}", collapse = "\n"))
+})
 ```
 
 ```{r}
